@@ -2,7 +2,7 @@ node {
   def image
    
    stage ('Build') {
-         def mvnHome = tool name: 'maven', type: 'maven'
+         def mvnHome = tool name: 'Maven', type: 'maven'
          def mvnCMD = "${mvnHome}/bin/mvn "
          sh "${mvnCMD} clean package"           
         }
