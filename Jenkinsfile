@@ -2,7 +2,7 @@ node {
   def image
    
    stage ('Build') {
-         sh "${mvnCMD} clean package"           
+         sh "mvn clean package"           
         }
     stage('Build image') {
   
